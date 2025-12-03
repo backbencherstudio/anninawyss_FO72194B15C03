@@ -1,6 +1,7 @@
 import 'package:anninawyss_o72194b15c03/core/route/route_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,12 +13,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Riverpod MVVM Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: Routes.splashRoute,
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (_,context) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Riverpod MVVM Demo',
+          theme: ThemeData(primarySwatch: Colors.blue),
+          onGenerateRoute: RouteGenerator.getRoute,
+          initialRoute: Routes.splashRoute,
+        );
+      }
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/constansts/app_colors.dart';
 class CustomButton extends StatelessWidget {
@@ -21,7 +22,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 24.h, vertical: 10.w),
       decoration: BoxDecoration(
         color: buttonBackground ?? AppColors.btnBackgroundColor,
         borderRadius: BorderRadius.circular(30),
