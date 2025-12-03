@@ -1,3 +1,4 @@
+import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../presentation/bottom_nav/view/bottom_nav_bar_screen.dart';
@@ -16,7 +17,7 @@ class RouteGenerator{
   static Route<dynamic>getRoute(RouteSettings routeSettings){
     switch (routeSettings.name) {
       case Routes.splashRoute:
-      return MaterialPageRoute(builder: (_)=>const BottomNavBarScreen());
+      return MaterialPageRoute(builder: (_)=>const SplashScreen());
       //  case Routes.loginRoute:
       // return MaterialPageRoute(builder: (_)=>LoginScreen());
       
