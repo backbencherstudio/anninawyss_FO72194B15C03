@@ -19,13 +19,12 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteBackgroundColor,
-      appBar: AppBarAuth(),
       body: Padding(
         padding: EdgeInsets.all(16.r),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 16.h),
+            SizedBox(height: 60.h),
             Text("Log in", style: TextStyle(color: AppColors.primaryTextColor, fontSize: 32,fontWeight: FontWeight.w600)),
             SizedBox(height: 6.h,),
             Text("Nice to have you back!",),
@@ -77,9 +76,14 @@ class _LoginScreenState extends State<LoginScreen> {
 
             Align(
               alignment: Alignment.centerRight,
-              child: Text("Forget Password?",
-                  style: TextStyle(
-                      color: AppColors.btnBackgroundColor, fontSize: 14.sp, fontWeight: FontWeight.w600)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, Routes.forgetPasswordRoute);
+                },
+                child: Text("Forget Password?",
+                    style: TextStyle(
+                        color: AppColors.btnBackgroundColor, fontSize: 14.sp, fontWeight: FontWeight.w600)),
+              ),
             ),
             SizedBox(height: 10.h,),
             CustomButton(buttonText: "Login", onTap: (){}),

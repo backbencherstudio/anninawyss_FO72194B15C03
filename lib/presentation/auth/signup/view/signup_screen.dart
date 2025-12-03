@@ -18,13 +18,12 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteBackgroundColor,
-      appBar: AppBarAuth(),
       body: Padding(
         padding: EdgeInsets.all(16.r),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 16.h),
+            SizedBox(height: 60.h),
             Text("Sign Up", style: TextStyle(color: AppColors.primaryTextColor, fontSize: 32,fontWeight: FontWeight.w600)),
             SizedBox(height: 6.h),
             const Text("Let's get you started!"),
