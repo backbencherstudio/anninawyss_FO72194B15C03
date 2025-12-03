@@ -1,6 +1,9 @@
+import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/constansts/app_colors.dart';
 import '../../../../core/constansts/app_images.dart';
+import '../../../../core/route/route_manager.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -17,60 +20,62 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: Column(
         children: [
           const Spacer(),
-          Image.asset(
-            AppImages.splashBackground,
-            height: 250,
-          ),
+          Image.asset(AppImages.splashBackground, height: 250.h),
           const Spacer(),
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Container(
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration:  BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(40),
-                  topRight: Radius.circular(40),
+                  topLeft: Radius.circular(40.r),
+                  topRight: Radius.circular(40.r),
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(24.0),
+                padding:  EdgeInsets.all(24.0.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Spacer(),
-                    Text(
-                      "Welcome",
-                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
+                    RichText(
+                      text: TextSpan(
+                        style: Theme.of(context).textTheme.headlineMedium
+                            ?.copyWith(fontWeight: FontWeight.bold),
+                        children: <TextSpan>[
+                          const TextSpan(text: 'Welcome to, '),
+                          TextSpan(
+                            text: 'SeelenKompass',
+                            style: Theme.of(context).textTheme.headlineMedium
+                                ?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.secondaryColor,
+                                ),
                           ),
-                    ),
-                    const SizedBox(height: 8),
-                    const Text(
-                      "Join us and start your journey.",
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    const Spacer(flex: 2),
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // TODO: Implement Login navigation
-                        },
-                        child: const Text("Login"),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 16),
-                    SizedBox(
-                      width: double.infinity,
-                      child: OutlinedButton(
-                        onPressed: () {
-                          // TODO: Implement Signup navigation
-                        },
-                        child: const Text("Sign Up"),
+                     SizedBox(height: 8.h),
+                    Text(
+                      "Where recovery takes root and strength blossoms.",
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: AppColors.greyTextColor,
                       ),
                     ),
-                    const Spacer(),
+                    SizedBox(height: 32),
+                    CustomButton(buttonText: "Login", onTap: () {
+                      Navigator.pushNamed(context, Routes.loginRoute);
+                    }),
+                     SizedBox(height: 16.h),
+                    CustomButton(
+                      buttonText: "Sign Up",
+                      onTap: () {},
+                      buttonBackground: AppColors.whiteBackgroundColor,
+                      borderColor: AppColors.whiteButtonBorderColor,
+                      textColor: AppColors.whiteButtonTextColor,
+                    ),
                   ],
                 ),
               ),

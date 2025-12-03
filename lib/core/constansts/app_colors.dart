@@ -15,6 +15,11 @@ class AppColors {
 
   //container colors
   static const Color btnBackgroundColor = Color(0xff2A4566);
+  static const Color whiteBackgroundColor = Color(0xffFFFFFF);
+  static const Color whiteButtonBorderColor = Color(0xff627B99);
+
+
+  static const Color secondaryColor = Color(0xff627B99);
 
 
 
@@ -24,6 +29,8 @@ class AppColors {
   static const Color btnTextColor = Color(0xffFFFFFF);
   static const Color whiteTextColor = Color(0xffFFFFFF);
   static const Color primaryTextColor = Color(0xff2F2A29);
+  static const Color whiteButtonTextColor = Color(0xff627B99);
+  static const Color greyTextColor = Color(0xff6B7280);
 
 
   //Graph Colors
