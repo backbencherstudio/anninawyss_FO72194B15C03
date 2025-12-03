@@ -71,7 +71,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                      SizedBox(height: 16.h),
                     CustomButton(
                       buttonText: "Sign Up",
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, Routes.signupRoute);
+                      },
                       buttonBackground: AppColors.whiteBackgroundColor,
                       borderColor: AppColors.whiteButtonBorderColor,
                       textColor: AppColors.whiteButtonTextColor,

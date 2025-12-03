@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/constansts/app_colors.dart';
+import '../../../../core/route/route_manager.dart';
 import '../../../widgets/custom_text_form_field.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -117,7 +118,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 SizedBox(width: 4.w,),
                 TextButton(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.pushNamed(context, Routes.loginRoute);
                   },
                   child: Text("Login",
                       style: TextStyle(
