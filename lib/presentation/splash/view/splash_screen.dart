@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/constansts/app_colors.dart';
 import '../../../core/constansts/app_images.dart';
+import '../../../core/route/route_manager.dart';
 import '../../widgets/custom_button.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
       body: DecoratedBox(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AppImages.welcomeImage), fit: BoxFit.cover),
+            image: AssetImage(AppImages.welcomeImage),
+            fit: BoxFit.cover,
+          ),
         ),
         child: Center(
           child: Padding(
@@ -27,7 +30,11 @@ class _SplashScreenState extends State<SplashScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(AppImages.splashBackground, height: 250,width: 250,),
+                Image.asset(
+                  AppImages.splashBackground,
+                  height: 250,
+                  width: 250,
+                ),
                 const SizedBox(height: 40),
                 const Text(
                   AppStrings.splashTitle,
@@ -39,7 +46,12 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 const SizedBox(height: 40),
-                CustomButton(buttonText: AppStrings.getStarted, onTap: () {  },),
+                CustomButton(
+                  buttonText: AppStrings.getStarted,
+                  onTap: () {
+                    Navigator.pushNamed(context, Routes.welcomeRoute);
+                  },
+                ),
               ],
             ),
           ),
@@ -48,4 +60,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
