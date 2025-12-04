@@ -4,6 +4,7 @@ import 'package:anninawyss_o72194b15c03/presentation/auth/login/view/login_scree
 import 'package:anninawyss_o72194b15c03/presentation/auth/otp/otp_verification_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/signup/view/signup_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/welcome/view/welcome_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/home/view/daily_reflection_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/home/view/home_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,7 @@ class Routes{
   static const String createNewPasswordRoute="/createNewPasswordScreen";
   static const String changePasswordSuccessRoute="/changePasswordScreen";
   static const String bottomNavBarScreenRoute="/bottomNavBarScreen";
+  static const String dailyReflectionRoute="/dailyReflectionScreen";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -51,6 +53,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> ChangePasswordSuccess());
       case Routes.bottomNavBarScreenRoute:
         return MaterialPageRoute(builder: (_)=> BottomNavBarScreen());
+        case Routes.dailyReflectionRoute:
+        return MaterialPageRoute(builder: (_)=> DailyReflectionScreen());
 
       default:
       return unDefineRoute();

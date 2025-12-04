@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 
 import '../../core/constansts/app_colors.dart';
+
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final bool showBackButton;
+
   const CustomAppBar({
     super.key,
+    this.showBackButton = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppColors.whiteBackgroundColor,
-      automaticallyImplyLeading: false, // Hides the default back button
+      automaticallyImplyLeading: false,
+      leading: showBackButton && Navigator.canPop(context)
+          ? IconButton(
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                color: Color(0Xff28303F),
+              ),
+              onPressed: () => Navigator.of(context).pop(),
+            )
+          : null,
       title: Row(
         children: [
           const CircleAvatar(
@@ -56,7 +69,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               );
             }).toList();
           },
-          icon: const Icon(Icons.menu, color: Color(0Xff28303F),), // Menu button icon
+          icon: const Icon(Icons.menu, color: Color(0Xff28303F),), //Menu button icon
         ),
       ],
     );

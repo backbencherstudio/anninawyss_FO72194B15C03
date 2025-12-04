@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/constansts/app_text_style.dart';
+import '../../../core/route/route_manager.dart';
 import '../../bottom_nav/view/bottom_nav_bar_screen.dart';
+import '../../widgets/custom_app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,58 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.whiteBackgroundColor,
-      appBar: AppBar(
-        backgroundColor: AppColors.whiteBackgroundColor,
-        automaticallyImplyLeading: false, // Hides the default back button
-        title: Row(
-          children: [
-            const CircleAvatar(
-              backgroundImage: NetworkImage('https://images.unsplash.com/photo-1494790108377-be9c29b29330'), // Replace with your image URL
-            ),
-            const SizedBox(width: 10),
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Welcome',
-                  style: TextStyle(fontSize: 14, color: Colors.grey),
-                ),
-                Text(
-                  'Josephine', // Replace with dynamic user name
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                ),
-              ],
-            ),
-          ],
-        ),
-        actions: [
-          ElevatedButton(
-            onPressed: () {
-              // Handle SOS button press
-              print('SOS button pressed');
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0XffE3342F), // Background color
-            ),
-            child:  Text('SOS', style: TextStyle(color: Colors.white)),
-          ),
-          PopupMenuButton<String>(
-            onSelected: (value) {
-              // Handle menu item selection
-              print('Selected: $value');
-            },
-            itemBuilder: (BuildContext context) {
-              return {'Settings', 'Profile', 'Logout'}.map((String choice) {
-                return PopupMenuItem<String>(
-                  value: choice,
-                  child: Text(choice),
-                );
-              }).toList();
-            },
-            icon: const Icon(Icons.menu, color: Color(0Xff28303F),), // Menu button icon
-          ),
-        ],
-      ),
+      appBar: CustomAppBar(),
 
       body: Padding(
         padding:  EdgeInsets.all(20.0),
@@ -221,7 +172,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 12.h,),
                     Text("“Healing is not about moving fast, it’s about moving forward one gentle step at a time.”", style: AppTextStyles.interS16RegularC6B7280,),
                     SizedBox(height: 20,),
-                    CustomButton(buttonText: "Daily Reflection", onTap: (){})
+                    CustomButton(buttonText: "Daily Reflection", onTap: (){
+                      Navigator.pushNamed(context, Routes.dailyReflectionRoute);
+                    })
                   ],
                 ),
                 
@@ -238,3 +191,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
