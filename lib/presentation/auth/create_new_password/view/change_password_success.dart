@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/constansts/app_colors.dart';
+import '../../../../core/route/route_manager.dart';
 class ChangePasswordSuccess extends StatefulWidget {
   const ChangePasswordSuccess({super.key});
 
@@ -44,7 +45,9 @@ class _ChangePasswordSuccessState extends State<ChangePasswordSuccess> {
               SizedBox(
                 height: 20.h,
               ),
-              CustomButton(buttonText: "Go To Home", onTap: (){})
+              CustomButton(buttonText: "Go To Home", onTap: (){
+                Navigator.pushNamed(context, Routes.bottomNavBarScreenRoute);
+              })
             ],
           ),
         ),
