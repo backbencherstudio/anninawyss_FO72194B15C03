@@ -1,4 +1,5 @@
 import 'package:anninawyss_o72194b15c03/core/route/route_manager.dart';
+import 'package:anninawyss_o72194b15c03/presentation/bottom_nav/view/bottom_nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(primarySwatch: Colors.blue),
           onGenerateRoute: RouteGenerator.getRoute,
           initialRoute: Routes.splashRoute,
+          //home: BottomNavBarScreen(),
         );
       }
     );

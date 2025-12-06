@@ -72,6 +72,18 @@ flutter:
     - assets/images/
     - assets/icons/
 
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito/Nunito-Regular.ttf
+          weight: 400
+
+    # Inter family (just regular)
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter_18pt-regular.ttf
+          weight: 400
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

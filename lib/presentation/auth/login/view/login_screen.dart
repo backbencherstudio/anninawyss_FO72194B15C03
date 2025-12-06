@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 10.h,),
             CustomButton(buttonText: "Login", onTap: (){
-              //Navigator.pushNamed(context, Routes.bottomNavBarRoute);
+              Navigator.pushNamed(context, Routes.bottomNavBarScreenRoute);
             }),
             SizedBox(height: 24,),
 
