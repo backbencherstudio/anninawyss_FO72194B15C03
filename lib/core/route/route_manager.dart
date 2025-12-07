@@ -6,6 +6,8 @@ import 'package:anninawyss_o72194b15c03/presentation/auth/signup/view/signup_scr
 import 'package:anninawyss_o72194b15c03/presentation/auth/welcome/view/welcome_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/home/view/daily_reflection_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/home/view/home_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/module_one/view/explaination_app.dart';
+import 'package:anninawyss_o72194b15c03/presentation/module_one/view/module_one_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +26,8 @@ class Routes{
   static const String changePasswordSuccessRoute="/changePasswordScreen";
   static const String bottomNavBarScreenRoute="/bottomNavBarScreen";
   static const String dailyReflectionRoute="/dailyReflectionScreen";
+  static const String moduleOneScreenRoute="/moduleOneScreenRoute";
+  static const String explainationAppRoute="/ExplainationAppScreen";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -55,6 +59,10 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> BottomNavBarScreen());
         case Routes.dailyReflectionRoute:
         return MaterialPageRoute(builder: (_)=> DailyReflectionScreen());
+        case Routes.moduleOneScreenRoute:
+        return MaterialPageRoute(builder: (_)=> ModuleOneScreen());
+        case Routes.explainationAppRoute:
+        return MaterialPageRoute(builder: (_)=> ExplainationApp());
 
       default:
       return unDefineRoute();

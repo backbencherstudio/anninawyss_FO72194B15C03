@@ -180,7 +180,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 
               ),
               SizedBox(height: 30.h,),
-              CustomButton(buttonText: "Module 1 : Arriving", onTap: (){}),
+              CustomButton(buttonText: "Module 1 : Arriving", onTap: (){
+                Navigator.pushNamed(context, Routes.moduleOneScreenRoute);
+              }),
               SizedBox(height: 12.h,),
               CustomButton(buttonText: "SOS Area", onTap: (){}),
             ],
