@@ -1,4 +1,5 @@
 import 'package:anninawyss_o72194b15c03/core/constansts/app_colors.dart';
+import 'package:anninawyss_o72194b15c03/core/route/route_manager.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_app_bar.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_title_text.dart';
 import 'package:flutter/material.dart';
@@ -34,13 +35,21 @@ class _ExplainationAppState extends State<ExplainationApp> {
                 children: [
                   TitleText(title: "Explanation of the app"),
                   SizedBox(height: 16.h),
-                  CustomContentButton(text: 'Reason for creating the app', onTap: () {  },),
+                  CustomContentButton(text: 'Reason for creating the app', onTap: () {
+                    Navigator.pushNamed(context, Routes.explainAppDetailsRoute);
+                  },),
                   SizedBox(height: 20.h,),
-                  CustomContentButton(text: "Operation of the app", onTap: (){}),
+                  CustomContentButton(text: "Operation of the app", onTap: (){
+                    Navigator.pushNamed(context, Routes.operationAppRoute);
+                  }),
                   SizedBox(height: 20.h,),
-                  CustomContentButton(text: "Functionality of the app", onTap: (){}),
+                  CustomContentButton(text: "Functionality of the app", onTap: (){
+                    Navigator.pushNamed(context, Routes.functionalityAppRoute);
+                  }),
                   SizedBox(height: 20.h,),
-                  CustomContentButton(text: "Disclaimer", onTap: (){}),
+                  CustomContentButton(text: "Disclaimer", onTap: (){
+                    Navigator.pushNamed(context, Routes.disclaimerAppRoute);
+                  }),
                   SizedBox(height: 20.h,),
                 ],
               ),
