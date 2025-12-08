@@ -1,4 +1,5 @@
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/modul_two_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/narcissism_type.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/question_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/self_test_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/what_narcissism.dart';
@@ -47,6 +48,7 @@ class Routes{
   static const String selfTestScreenRoute="/selfTestRoute";
   static const String questionScreenRoute="/questionScreen";
   static const String evaluationScreenRoute="/evaluationScreen";
+  static const String narcissismType="/narcissismType";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -102,6 +104,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> QuestionScreen());
         case Routes.evaluationScreenRoute:
         return MaterialPageRoute(builder: (_)=> EvaluationScreen());
+        case Routes.narcissismType:
+        return MaterialPageRoute(builder: (_)=> NarcissismType());
 
       default:
       return unDefineRoute();

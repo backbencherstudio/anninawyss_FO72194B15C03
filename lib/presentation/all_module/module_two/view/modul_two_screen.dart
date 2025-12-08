@@ -46,7 +46,9 @@ class ModuleTwoScreen extends StatelessWidget {
                   SizedBox(height: 18.h,),
                   CustomContentButton(text: "Narcissistic personality disorder", onTap: (){}),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "Types of narcissism", onTap: (){}),
+                  CustomContentButton(text: "Types of narcissism", onTap: (){
+                    Navigator.pushNamed(context, Routes.narcissismType);
+                  }),
                   SizedBox(height: 18.h,),
                   CustomContentButton(text: "Important terms", onTap: (){}),
                   SizedBox(height: 18.h,),
