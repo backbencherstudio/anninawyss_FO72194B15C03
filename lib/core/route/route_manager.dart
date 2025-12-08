@@ -19,6 +19,7 @@ import '../../presentation/all_module/module_one/view/functionality_app_screen.d
 import '../../presentation/all_module/module_one/view/module_one_screen.dart';
 import '../../presentation/all_module/module_one/view/my_personal_story.dart';
 import '../../presentation/all_module/module_one/view/operation_app_details.dart';
+import '../../presentation/all_module/module_two/view/evaluation_screen.dart';
 import '../../presentation/auth/create_new_password/view/change_password_success.dart';
 import '../../presentation/bottom_nav/view/bottom_nav_bar_screen.dart';
 import '../resource/app_strings.dart';
@@ -45,6 +46,7 @@ class Routes{
   static const String whatNarcissismRoute="/whatNarcissism";
   static const String selfTestScreenRoute="/selfTestRoute";
   static const String questionScreenRoute="/questionScreen";
+  static const String evaluationScreenRoute="/evaluationScreen";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -98,6 +100,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> SelfTestScreen());
       case Routes.questionScreenRoute:
         return MaterialPageRoute(builder: (_)=> QuestionScreen());
+        case Routes.evaluationScreenRoute:
+        return MaterialPageRoute(builder: (_)=> EvaluationScreen());
 
       default:
       return unDefineRoute();

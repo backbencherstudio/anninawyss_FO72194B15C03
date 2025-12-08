@@ -1,5 +1,6 @@
 import 'package:anninawyss_o72194b15c03/core/constansts/app_colors.dart';
 import 'package:anninawyss_o72194b15c03/core/constansts/app_text_style.dart';
+import 'package:anninawyss_o72194b15c03/core/route/route_manager.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -89,12 +90,7 @@ class QuestionScreen extends ConsumerWidget {
                           .read(selectedOptionProvider.notifier)
                           .state = null;
                     } else {
-                      // Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (_) => const ResultScreen(),
-                      //   ),
-                      // );
+                      Navigator.pushNamed(context, Routes.evaluationScreenRoute);
                     }
                   },
                   style: ElevatedButton.styleFrom(
