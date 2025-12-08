@@ -2,6 +2,7 @@ import 'package:anninawyss_o72194b15c03/core/constansts/app_colors.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/app_bar_auth.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_app_bar.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_button.dart';
+import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_content_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -54,8 +55,11 @@ class _ModuleOneScreenState extends State<ModuleOneScreen> {
 
                    ],
                  ),
-
                ),
+               SizedBox(height: 20.h,),
+               CustomContentButton(text: "My Personal Story", onTap: (){
+                 Navigator.pushNamed(context, Routes.myPersonalStoryRoute );
+               },),
                SizedBox(height: 20.h,),
                Container(
                  padding: EdgeInsets.all(16.r),

@@ -11,6 +11,7 @@ import 'package:anninawyss_o72194b15c03/presentation/module_one/view/explain_app
 import 'package:anninawyss_o72194b15c03/presentation/module_one/view/explaination_app.dart';
 import 'package:anninawyss_o72194b15c03/presentation/module_one/view/functionality_app_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/module_one/view/module_one_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/module_one/view/my_personal_story.dart';
 import 'package:anninawyss_o72194b15c03/presentation/module_one/view/operation_app_details.dart';
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ class Routes{
   static const String operationAppRoute="/operationAppScreen";
   static const String disclaimerAppRoute="/disclaimerAppScreen";
   static const String functionalityAppRoute="/functionalityAppScreen";
+  static const String myPersonalStoryRoute="/myPersonalStoryScreen";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -53,17 +55,17 @@ class RouteGenerator{
       return MaterialPageRoute(builder: (_)=>WelcomeScreen());
       case Routes.loginRoute:
       return MaterialPageRoute(builder: (_)=> LoginScreen());
-      case Routes.signupRoute:
+        case Routes.signupRoute:
         return MaterialPageRoute(builder: (_)=> SignupScreen());
-       case Routes.forgetPasswordRoute:
+        case Routes.forgetPasswordRoute:
         return MaterialPageRoute(builder: (_)=> ForgetPasswordScreen());
- case Routes.otpVerificationRoute:
+        case Routes.otpVerificationRoute:
         return MaterialPageRoute(builder: (_)=> OtpVerificationScreen());
- case Routes.createNewPasswordRoute:
+        case Routes.createNewPasswordRoute:
         return MaterialPageRoute(builder: (_)=> CreateNewPassword());
- case Routes.changePasswordSuccessRoute:
+        case Routes.changePasswordSuccessRoute:
         return MaterialPageRoute(builder: (_)=> ChangePasswordSuccess());
-      case Routes.bottomNavBarScreenRoute:
+        case Routes.bottomNavBarScreenRoute:
         return MaterialPageRoute(builder: (_)=> BottomNavBarScreen());
         case Routes.dailyReflectionRoute:
         return MaterialPageRoute(builder: (_)=> DailyReflectionScreen());
@@ -79,6 +81,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> DisclaimerAppScreen());
         case Routes.functionalityAppRoute:
         return MaterialPageRoute(builder: (_)=> FunctionalityAppScreen());
+        case Routes.myPersonalStoryRoute:
+        return MaterialPageRoute(builder: (_)=> MyPersonalStory());
 
       default:
       return unDefineRoute();

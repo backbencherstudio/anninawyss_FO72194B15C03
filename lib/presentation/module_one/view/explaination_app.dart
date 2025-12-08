@@ -28,8 +28,11 @@ class _ExplainationAppState extends State<ExplainationApp> {
             Container(
               padding: EdgeInsets.all(16.r),
               decoration: BoxDecoration(
-                color: AppColors.cardBackgroundColor,
-                borderRadius: BorderRadius.circular(12.r),
+                  borderRadius: BorderRadius.circular(12.r),
+                  color: AppColors.whiteBackgroundColor,
+                  border: Border.all(
+                    color: Color(0xFF96B2D0),
+                  )
               ),
               child: Column(
                 children: [
