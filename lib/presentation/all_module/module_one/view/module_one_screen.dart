@@ -2,13 +2,14 @@ import 'package:anninawyss_o72194b15c03/core/constansts/app_colors.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/app_bar_auth.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_app_bar.dart';
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_button.dart';
+import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_content_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../core/constansts/app_text_style.dart';
+import '../../../../core/route/route_manager.dart';
+import '../../../widgets/custom_subtitle_text.dart';
+import '../../../widgets/custom_title_text.dart';
 
-import '../../../core/constansts/app_text_style.dart';
-import '../../../core/route/route_manager.dart';
-import '../../widgets/custom_subtitle_text.dart';
-import '../../widgets/custom_title_text.dart';
 
 class ModuleOneScreen extends StatefulWidget {
   const ModuleOneScreen({super.key});
@@ -54,8 +55,11 @@ class _ModuleOneScreenState extends State<ModuleOneScreen> {
 
                    ],
                  ),
-
                ),
+               SizedBox(height: 20.h,),
+               CustomContentButton(text: "My Personal Story", onTap: (){
+                 Navigator.pushNamed(context, Routes.myPersonalStoryRoute );
+               },),
                SizedBox(height: 20.h,),
                Container(
                  padding: EdgeInsets.all(16.r),
@@ -76,7 +80,9 @@ class _ModuleOneScreenState extends State<ModuleOneScreen> {
                  
                ),
                SizedBox(height: 24.h),
-               CustomButton(buttonText: "Module 2 : Understanding", onTap: (){}),
+               CustomButton(buttonText: "Module 2 : Understanding", onTap: (){
+                 Navigator.pushNamed(context, Routes.moduleTwoScreenRoute);
+               }),
                SizedBox(height: 8.h),
                CustomButton(buttonText: "SOS Area", onTap: (){}),
              ],

@@ -12,7 +12,7 @@ class TitleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: AppTextStyles.nunitoS18BoldC2F2A29,
+      style: AppTextStyles.nunitoS16BoldC2F2A29,
     );
   }
 }
