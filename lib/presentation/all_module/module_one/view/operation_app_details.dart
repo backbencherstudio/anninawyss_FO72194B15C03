@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../core/constansts/app_colors.dart';
+import '../../../widgets/custom_app_bar.dart';
+import '../../../widgets/custom_subtitle_text.dart';
+import '../../../widgets/custom_title_text.dart';
 
-import '../../../core/constansts/app_colors.dart';
-import '../../widgets/custom_app_bar.dart';
-import '../../widgets/custom_subtitle_text.dart';
-import '../../widgets/custom_title_text.dart';
 class OperationAppDetails extends StatelessWidget {
   const OperationAppDetails({super.key});
 
@@ -42,6 +42,6 @@ class OperationAppDetails extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }
