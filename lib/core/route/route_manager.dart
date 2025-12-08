@@ -1,3 +1,7 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/modul_two_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/question_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/self_test_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/what_narcissism.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/create_new_password/view/create_new_password.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/forget_password/view/forget_password_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/login/view/login_screen.dart';
@@ -5,17 +9,16 @@ import 'package:anninawyss_o72194b15c03/presentation/auth/otp/otp_verification_s
 import 'package:anninawyss_o72194b15c03/presentation/auth/signup/view/signup_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/auth/welcome/view/welcome_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/home/view/daily_reflection_screen.dart';
-import 'package:anninawyss_o72194b15c03/presentation/home/view/home_screen.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/disclaimer_app_screen.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/explain_app_details.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/explaination_app.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/functionality_app_screen.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/module_one_screen.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/my_personal_story.dart';
-import 'package:anninawyss_o72194b15c03/presentation/module_one/view/operation_app_details.dart';
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../presentation/all_module/module_one/view/disclaimer_app_screen.dart';
+import '../../presentation/all_module/module_one/view/explain_app_details.dart';
+import '../../presentation/all_module/module_one/view/explaination_app.dart';
+import '../../presentation/all_module/module_one/view/functionality_app_screen.dart';
+import '../../presentation/all_module/module_one/view/module_one_screen.dart';
+import '../../presentation/all_module/module_one/view/my_personal_story.dart';
+import '../../presentation/all_module/module_one/view/operation_app_details.dart';
 import '../../presentation/auth/create_new_password/view/change_password_success.dart';
 import '../../presentation/bottom_nav/view/bottom_nav_bar_screen.dart';
 import '../resource/app_strings.dart';
@@ -38,6 +41,10 @@ class Routes{
   static const String disclaimerAppRoute="/disclaimerAppScreen";
   static const String functionalityAppRoute="/functionalityAppScreen";
   static const String myPersonalStoryRoute="/myPersonalStoryScreen";
+  static const String moduleTwoScreenRoute="/moduleTwoScreen";
+  static const String whatNarcissismRoute="/whatNarcissism";
+  static const String selfTestScreenRoute="/selfTestRoute";
+  static const String questionScreenRoute="/questionScreen";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -83,6 +90,14 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> FunctionalityAppScreen());
         case Routes.myPersonalStoryRoute:
         return MaterialPageRoute(builder: (_)=> MyPersonalStory());
+        case Routes.moduleTwoScreenRoute:
+        return MaterialPageRoute(builder: (_)=> ModuleTwoScreen());
+        case Routes.whatNarcissismRoute:
+        return MaterialPageRoute(builder: (_)=> WhatNarcissism());
+      case Routes.selfTestScreenRoute:
+        return MaterialPageRoute(builder: (_)=> SelfTestScreen());
+      case Routes.questionScreenRoute:
+        return MaterialPageRoute(builder: (_)=> QuestionScreen());
 
       default:
       return unDefineRoute();
