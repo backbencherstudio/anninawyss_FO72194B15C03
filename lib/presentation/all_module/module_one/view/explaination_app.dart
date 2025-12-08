@@ -4,9 +4,8 @@ import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_app_bar.dart
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_title_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../widgets/custom_content_button.dart';
 
-import '../../../core/constansts/app_text_style.dart';
-import '../../widgets/custom_content_button.dart';
 
 class ExplainationApp extends StatefulWidget {
   const ExplainationApp({super.key});

@@ -5,11 +5,11 @@ import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_button.dart'
 import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_content_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../core/constansts/app_text_style.dart';
+import '../../../../core/route/route_manager.dart';
+import '../../../widgets/custom_subtitle_text.dart';
+import '../../../widgets/custom_title_text.dart';
 
-import '../../../core/constansts/app_text_style.dart';
-import '../../../core/route/route_manager.dart';
-import '../../widgets/custom_subtitle_text.dart';
-import '../../widgets/custom_title_text.dart';
 
 class ModuleOneScreen extends StatefulWidget {
   const ModuleOneScreen({super.key});
@@ -80,7 +80,9 @@ class _ModuleOneScreenState extends State<ModuleOneScreen> {
                  
                ),
                SizedBox(height: 24.h),
-               CustomButton(buttonText: "Module 2 : Understanding", onTap: (){}),
+               CustomButton(buttonText: "Module 2 : Understanding", onTap: (){
+                 Navigator.pushNamed(context, Routes.moduleTwoScreenRoute);
+               }),
                SizedBox(height: 8.h),
                CustomButton(buttonText: "SOS Area", onTap: (){}),
              ],
