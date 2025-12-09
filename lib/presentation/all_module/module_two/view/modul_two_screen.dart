@@ -50,7 +50,9 @@ class ModuleTwoScreen extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.narcissismType);
                   }),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "Important terms", onTap: (){}),
+                  CustomContentButton(text: "Important terms", onTap: (){
+                    Navigator.pushNamed(context, Routes.importantTermsRoute);
+                  }),
                   SizedBox(height: 18.h,),
                   CustomContentButton(text: "Cycle of narcissistic relationships", onTap: (){}),
                   SizedBox(height: 18.h,),

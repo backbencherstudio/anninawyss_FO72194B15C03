@@ -1,8 +1,8 @@
-class NarcissismItemModel {
+class ModuleTwoItemModel {
   final String title;
   final String content;
 
-  NarcissismItemModel({
+  ModuleTwoItemModel({
     required this.title,
     required this.content,
   });

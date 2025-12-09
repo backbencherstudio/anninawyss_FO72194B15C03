@@ -1,5 +1,5 @@
 import 'package:anninawyss_o72194b15c03/core/constansts/app_text_style.dart';
-import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view_model/narcissism_model.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view_model/module_two_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -7,7 +7,7 @@ import '../../../../core/constansts/app_colors.dart';
 
 
 class CustomNarcissismTileTile extends StatelessWidget {
-  final NarcissismItemModel item;
+  final ModuleTwoItemModel item;
 
   const CustomNarcissismTileTile({super.key, required this.item});
 
