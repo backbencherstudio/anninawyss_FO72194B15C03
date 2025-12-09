@@ -54,11 +54,17 @@ class ModuleTwoScreen extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.importantTermsRoute);
                   }),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "Cycle of narcissistic relationships", onTap: (){}),
+                  CustomContentButton(text: "Cycle of narcissistic relationships", onTap: (){
+                    Navigator.pushNamed(context, Routes.cycleNarcissisticRoute);
+                  }),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "Forms of psychological abuse", onTap: (){}),
+                  CustomContentButton(text: "Forms of psychological abuse", onTap: (){
+                    Navigator.pushNamed(context, Routes.psychologicalAbuseRoute);
+                  }),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "Psychological & physical signs of narcissistic abuse", onTap: (){}),
+                  CustomContentButton(text: "Psychological & physical signs of narcissistic abuse", onTap: (){
+                    Navigator.pushNamed(context, Routes.narcissisticAbuse);
+                  }),
                   SizedBox(height: 18.h,),
                   CustomContentButton(text: "What narcissistic abuse does to the nervous system", onTap: (){}),
                   SizedBox(height: 18.h,),

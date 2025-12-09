@@ -1,6 +1,9 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/cycle_narcissistic_relation.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/important_terms.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/modul_two_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/narcissism_type.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/narcissistic_abuse.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/psychological_abuse_form.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/question_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/self_test_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/what_narcissism.dart';
@@ -51,6 +54,9 @@ class Routes{
   static const String evaluationScreenRoute="/evaluationScreen";
   static const String narcissismType="/narcissismType";
   static const String importantTermsRoute="/importantTerms";
+  static const String cycleNarcissisticRoute="/cycleNarcissistic";
+  static const String psychologicalAbuseRoute="/psychologicalAbuse";
+  static const String narcissisticAbuse="/narcissisticAbuse";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -110,6 +116,12 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> NarcissismType());
         case Routes.importantTermsRoute:
         return MaterialPageRoute(builder: (_)=> ImportantTerms());
+        case Routes.cycleNarcissisticRoute:
+        return MaterialPageRoute(builder: (_)=> CycleNarcissisticRelation());
+        case Routes.psychologicalAbuseRoute:
+        return MaterialPageRoute(builder: (_)=> PsychologicalAbuseForm());
+      case Routes.narcissisticAbuse:
+        return MaterialPageRoute(builder: (_)=> NarcissisticAbuse());
 
       default:
       return unDefineRoute();
