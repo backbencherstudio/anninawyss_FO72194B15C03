@@ -49,7 +49,9 @@ class _ModuleThreeScreenState extends State<ModuleThreeScreen> {
                     Navigator.pushNamed(context, Routes.activateSupportRoute);
                   }),
                   SizedBox(height: 24.h,),
-                  CustomButton(buttonText: "Module 4 – Plan and Implement Separation", onTap: (){}),
+                  CustomButton(buttonText: "Module 4 – Plan and Implement Separation", onTap: (){
+                    Navigator.pushNamed(context, Routes.moduleFourRoute);
+                  }),
                   SizedBox(height:  12.h),
                   CustomButton(buttonText: "SOS Area", onTap: (){}),
 

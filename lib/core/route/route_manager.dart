@@ -1,3 +1,6 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/grey_rock_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/module_four_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/separation_script_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/define_no_go_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/module_three_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/reality_check_screen.dart';
@@ -20,6 +23,7 @@ import 'package:anninawyss_o72194b15c03/presentation/home/view/daily_reflection_
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../presentation/all_module/module_four/view/preparation_screen.dart';
 import '../../presentation/all_module/module_one/view/disclaimer_app_screen.dart';
 import '../../presentation/all_module/module_one/view/explain_app_details.dart';
 import '../../presentation/all_module/module_one/view/explaination_app.dart';
@@ -67,7 +71,10 @@ class Routes{
   static const String realityCheckRoute = "/realityCheck";
   static const String defineNoGoRoute = "/defineNoGoRoute";
   static const String activateSupportRoute = "/activateSupportRoute";
-
+  static const String moduleFourRoute = "/moduleFourRoute";
+  static const String preparationRoute = "/preparationRoute";
+  static const String greyRockRoute = "/greyRockRoute";
+  static const String separationScriptRoute = "/separationScriptRoute";
 
   static const String onBoadingRoute="/onBoading";
   static const String registerRoute="/register";
@@ -142,6 +149,14 @@ class RouteGenerator{
           return MaterialPageRoute(builder: (_)=> DefineNoGoScreen());
      case Routes.activateSupportRoute:
           return MaterialPageRoute(builder: (_)=> ActivateSupportEnvironment());
+     case Routes.moduleFourRoute:
+          return MaterialPageRoute(builder: (_)=> ModuleFourScreen());
+     case Routes.preparationRoute:
+          return MaterialPageRoute(builder: (_)=> PreparationScreen());
+     case Routes.greyRockRoute:
+          return MaterialPageRoute(builder: (_)=> GreyRockScreen());
+     case Routes.separationScriptRoute:
+          return MaterialPageRoute(builder: (_)=> SeparationScriptScreen());
 
       default:
       return unDefineRoute();
