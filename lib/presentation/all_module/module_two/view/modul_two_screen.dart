@@ -75,6 +75,10 @@ class ModuleTwoScreen extends StatelessWidget {
                   
                   CustomButton(buttonText: "Where do you currently stand?", onTap: (){}),
                   SizedBox(height: 16.h,),
+                  CustomButton(buttonText: "Module-3", onTap: (){
+                    Navigator.pushNamed(context, Routes.moduleThreeRoute);
+                  }),
+                  SizedBox(height: 16.h,),
                   CustomButton(buttonText: "SOS Area", onTap: (){}),
                 ],
             ),

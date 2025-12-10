@@ -21,6 +21,7 @@ class NarcissisticAbuse extends ConsumerWidget {
         padding:  EdgeInsets.all(16.r),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+
           children: [
             Expanded(
               child: Container(

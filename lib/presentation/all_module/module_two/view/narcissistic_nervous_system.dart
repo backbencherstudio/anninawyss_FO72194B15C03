@@ -22,12 +22,15 @@ class NarcissisticNervousSystem extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
+
               child: Container(
                 decoration: BoxDecoration(
                   color: AppColors.cardBackgroundColor,
                   borderRadius: BorderRadius.circular(12.r),
                 ),
+
                 child: Column(
+
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 20.h,),

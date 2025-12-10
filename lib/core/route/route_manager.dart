@@ -1,3 +1,5 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/module_three_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/reality_check_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/cycle_narcissistic_relation.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/important_terms.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/modul_two_screen.dart';
@@ -59,6 +61,8 @@ class Routes{
   static const String psychologicalAbuseRoute="/psychologicalAbuse";
   static const String narcissisticAbuse="/narcissisticAbuse";
   static const String narcissisticNervousRoute="/narcissisticNervous";
+  static const String moduleThreeRoute="/moduleThreeRoute";
+  static const String realityCheckRoute = "/realityCheck";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -126,6 +130,10 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> NarcissisticAbuse());
      case Routes.narcissisticNervousRoute:
         return MaterialPageRoute(builder: (_)=> NarcissisticNervousSystem());
+      case Routes.moduleThreeRoute:
+          return MaterialPageRoute(builder: (_)=> ModuleThreeScreen());
+     case Routes.realityCheckRoute:
+          return MaterialPageRoute(builder: (_)=> RealityCheckScreen());
 
       default:
       return unDefineRoute();
