@@ -1,3 +1,4 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/define_no_go_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/module_three_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_three/view/reality_check_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_two/view/cycle_narcissistic_relation.dart';
@@ -26,6 +27,7 @@ import '../../presentation/all_module/module_one/view/functionality_app_screen.d
 import '../../presentation/all_module/module_one/view/module_one_screen.dart';
 import '../../presentation/all_module/module_one/view/my_personal_story.dart';
 import '../../presentation/all_module/module_one/view/operation_app_details.dart';
+import '../../presentation/all_module/module_three/view/activate_support_environment.dart';
 import '../../presentation/all_module/module_two/view/evaluation_screen.dart';
 import '../../presentation/all_module/module_two/view/narcissistic_nervous_system.dart';
 import '../../presentation/auth/create_new_password/view/change_password_success.dart';
@@ -63,6 +65,8 @@ class Routes{
   static const String narcissisticNervousRoute="/narcissisticNervous";
   static const String moduleThreeRoute="/moduleThreeRoute";
   static const String realityCheckRoute = "/realityCheck";
+  static const String defineNoGoRoute = "/defineNoGoRoute";
+  static const String activateSupportRoute = "/activateSupportRoute";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -134,6 +138,10 @@ class RouteGenerator{
           return MaterialPageRoute(builder: (_)=> ModuleThreeScreen());
      case Routes.realityCheckRoute:
           return MaterialPageRoute(builder: (_)=> RealityCheckScreen());
+     case Routes.defineNoGoRoute:
+          return MaterialPageRoute(builder: (_)=> DefineNoGoScreen());
+     case Routes.activateSupportRoute:
+          return MaterialPageRoute(builder: (_)=> ActivateSupportEnvironment());
 
       default:
       return unDefineRoute();

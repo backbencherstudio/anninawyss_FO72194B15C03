@@ -41,9 +41,13 @@ class _ModuleThreeScreenState extends State<ModuleThreeScreen> {
                     Navigator.pushNamed(context, Routes.realityCheckRoute);
                   }),
                   SizedBox(height: 16.h,),
-                  CustomContentButton(text: "Define No-Go’s", onTap: (){}),
+                  CustomContentButton(text: "Define No-Go’s", onTap: (){
+                    Navigator.pushNamed(context, Routes.defineNoGoRoute);
+                  }),
                   SizedBox(height: 16.h,),
-                  CustomContentButton(text: "Activate Support from Your Environment", onTap: (){}),
+                  CustomContentButton(text: "Activate Support from Your Environment", onTap: (){
+                    Navigator.pushNamed(context, Routes.activateSupportRoute);
+                  }),
                   SizedBox(height: 24.h,),
                   CustomButton(buttonText: "Module 4 – Plan and Implement Separation", onTap: (){}),
                   SizedBox(height:  12.h),
