@@ -66,7 +66,9 @@ class ModuleTwoScreen extends StatelessWidget {
                     Navigator.pushNamed(context, Routes.narcissisticAbuse);
                   }),
                   SizedBox(height: 18.h,),
-                  CustomContentButton(text: "What narcissistic abuse does to the nervous system", onTap: (){}),
+                  CustomContentButton(text: "What narcissistic abuse does to the nervous system", onTap: (){
+                    Navigator.pushNamed(context, Routes.narcissisticNervousRoute);
+                  }),
                   SizedBox(height: 18.h,),
                   CustomContentButton(text: "Retraumatization through the environment", onTap: (){}),
                   SizedBox(height: 24.h,),

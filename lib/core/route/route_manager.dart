@@ -25,6 +25,7 @@ import '../../presentation/all_module/module_one/view/module_one_screen.dart';
 import '../../presentation/all_module/module_one/view/my_personal_story.dart';
 import '../../presentation/all_module/module_one/view/operation_app_details.dart';
 import '../../presentation/all_module/module_two/view/evaluation_screen.dart';
+import '../../presentation/all_module/module_two/view/narcissistic_nervous_system.dart';
 import '../../presentation/auth/create_new_password/view/change_password_success.dart';
 import '../../presentation/bottom_nav/view/bottom_nav_bar_screen.dart';
 import '../resource/app_strings.dart';
@@ -57,6 +58,7 @@ class Routes{
   static const String cycleNarcissisticRoute="/cycleNarcissistic";
   static const String psychologicalAbuseRoute="/psychologicalAbuse";
   static const String narcissisticAbuse="/narcissisticAbuse";
+  static const String narcissisticNervousRoute="/narcissisticNervous";
 
 
   static const String onBoadingRoute="/onBoading";
@@ -122,6 +124,8 @@ class RouteGenerator{
         return MaterialPageRoute(builder: (_)=> PsychologicalAbuseForm());
       case Routes.narcissisticAbuse:
         return MaterialPageRoute(builder: (_)=> NarcissisticAbuse());
+     case Routes.narcissisticNervousRoute:
+        return MaterialPageRoute(builder: (_)=> NarcissisticNervousSystem());
 
       default:
       return unDefineRoute();
