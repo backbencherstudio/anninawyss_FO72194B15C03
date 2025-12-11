@@ -1,3 +1,5 @@
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/calming_nervous_system.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/module_five_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/grey_rock_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/module_four_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/separation_script_screen.dart';
@@ -75,6 +77,8 @@ class Routes{
   static const String preparationRoute = "/preparationRoute";
   static const String greyRockRoute = "/greyRockRoute";
   static const String separationScriptRoute = "/separationScriptRoute";
+  static const String moduleFiveScreenRoute = "/moduleFiveScreenRoute";
+  static const String calmingNervousSystemRoute = "/calmingNervousSystemRoute";
 
   static const String onBoadingRoute="/onBoading";
   static const String registerRoute="/register";
@@ -157,6 +161,10 @@ class RouteGenerator{
           return MaterialPageRoute(builder: (_)=> GreyRockScreen());
      case Routes.separationScriptRoute:
           return MaterialPageRoute(builder: (_)=> SeparationScriptScreen());
+     case Routes.moduleFiveScreenRoute:
+          return MaterialPageRoute(builder: (_)=> ModuleFiveScreen());
+     case Routes.calmingNervousSystemRoute:
+          return MaterialPageRoute(builder: (_)=> CalmingNervousSystem());
 
       default:
       return unDefineRoute();

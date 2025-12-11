@@ -54,7 +54,9 @@ class _ModuleFourScreenState extends State<ModuleFourScreen> {
                   CustomContentButton(text: "No Contact", onTap: (){}),
                   SizedBox(height: 24.h,),
 
-                  CustomButton(buttonText: "Module 5 – First Weeks After Separation", onTap: (){}),
+                  CustomButton(buttonText: "Module 5 – First Weeks After Separation", onTap: (){
+                    Navigator.pushNamed(context, Routes.moduleFiveScreenRoute);
+                  }),
                   SizedBox(height: 20.h,),
                   CustomButton(buttonText: "SOS Area", onTap: (){}),
 
