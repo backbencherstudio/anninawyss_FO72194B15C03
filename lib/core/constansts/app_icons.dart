@@ -6,6 +6,9 @@ class AppIcons {
     static const String notificationIcon = 'assets/icons/gmail.png';
     static const String userIcon = 'assets/icons/user.png';
     static const String analyticsIcon = 'assets/icons/analytics_icon.png';
+    static const String headphoneIcon = 'assets/icons/headphone_icon.png';
+    static const String playIcon = 'assets/icons/play_icon.png';
+
 
 
     static const String happyIcon ="assets/icons/happy_icon.png";
