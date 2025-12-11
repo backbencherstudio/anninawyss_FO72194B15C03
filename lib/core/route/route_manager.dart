@@ -1,5 +1,6 @@
-import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/calming_nervous_system.dart';
-import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/module_five_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/view/calming_nervous_system.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/view/module_five_screen.dart';
+import 'package:anninawyss_o72194b15c03/presentation/all_module/module_five/view/thought_check_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/grey_rock_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/module_four_screen.dart';
 import 'package:anninawyss_o72194b15c03/presentation/all_module/module_four/view/separation_script_screen.dart';
@@ -25,6 +26,7 @@ import 'package:anninawyss_o72194b15c03/presentation/home/view/daily_reflection_
 import 'package:anninawyss_o72194b15c03/presentation/splash/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../presentation/all_module/module_five/view/withdrawal_plan_screen.dart';
 import '../../presentation/all_module/module_four/view/preparation_screen.dart';
 import '../../presentation/all_module/module_one/view/disclaimer_app_screen.dart';
 import '../../presentation/all_module/module_one/view/explain_app_details.dart';
@@ -79,6 +81,9 @@ class Routes{
   static const String separationScriptRoute = "/separationScriptRoute";
   static const String moduleFiveScreenRoute = "/moduleFiveScreenRoute";
   static const String calmingNervousSystemRoute = "/calmingNervousSystemRoute";
+  static const String withdrawalPlanRoute = "/withdrawalPlanRoute";
+  static const String thoughtCheckRoute = "/thoughtCheckRoute";
+
 
   static const String onBoadingRoute="/onBoading";
   static const String registerRoute="/register";
@@ -165,6 +170,10 @@ class RouteGenerator{
           return MaterialPageRoute(builder: (_)=> ModuleFiveScreen());
      case Routes.calmingNervousSystemRoute:
           return MaterialPageRoute(builder: (_)=> CalmingNervousSystem());
+     case Routes.withdrawalPlanRoute:
+          return MaterialPageRoute(builder: (_)=> WithdrawalPlanScreen());
+     case Routes.thoughtCheckRoute:
+          return MaterialPageRoute(builder: (_)=> ThoughtCheckScreen());
 
       default:
       return unDefineRoute();

@@ -6,7 +6,7 @@ import 'package:anninawyss_o72194b15c03/presentation/widgets/custom_content_butt
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/route/route_manager.dart';
+import '../../../../core/route/route_manager.dart';
 
 class ModuleFiveScreen extends StatefulWidget {
   const ModuleFiveScreen({super.key});
@@ -43,9 +43,13 @@ class _ModuleFiveScreenState extends State<ModuleFiveScreen> {
                       Navigator.pushNamed(context, Routes.calmingNervousSystemRoute);
                     }),
                     SizedBox(height: 12.h,),
-                    CustomContentButton(text: "Withdrawal Plan", onTap:(){} ),
+                    CustomContentButton(text: "Withdrawal Plan", onTap:(){
+                      Navigator.pushNamed(context, Routes.withdrawalPlanRoute);
+                    } ),
                     SizedBox(height: 12.h,),
-                    CustomContentButton(text: "Thought Check", onTap: (){}),
+                    CustomContentButton(text: "Thought Check", onTap: (){
+                      Navigator.pushNamed(context, Routes.thoughtCheckRoute);
+                    }),
                     SizedBox(height: 24.h,),
                     CustomButton(buttonText: "Module 6 – Healing Plan", onTap: (){}),
                     SizedBox(height: 12.h,),
