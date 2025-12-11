@@ -9,6 +9,7 @@ class CustomButton extends StatelessWidget {
     this.buttonBackground,
     this.textColor,
     this.borderWidth,
+    this.textSize,
     this.borderColor,
     super.key,
   });
@@ -18,6 +19,7 @@ class CustomButton extends StatelessWidget {
   final Color? textColor;
   final double? borderWidth;
   final Color? borderColor;
+  final double? textSize;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +40,7 @@ class CustomButton extends StatelessWidget {
             buttonText,
             style: TextStyle(
               color: textColor ?? AppColors.whiteTextColor,
-              fontSize: 16,
+              fontSize: textSize ?? 16,
               fontWeight: FontWeight.w600,
             ),
           ),
